@@ -2,11 +2,246 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>PROJECT</title>
+      <title>Room-me | framework</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
       <link rel="stylesheet" href="./css/styles.css">
    </head>
    <body>
-      <div id="app-container"></div>
+      <div id="app-container">
+
+         <div class="jumbotron header-jumbo">
+               <div class="nav-logo">
+                  <img src="images/room-me-logo-white.svg" alt="">
+               </div>
+               <div class="nav-menu">
+                  <p>Login | Register</p>
+                  <i class="fa fa-bars ham-menu" aria-hidden="true"></i>
+            </div>
+            <h1>Living Together Made Easy</h1>
+               <p>Find your perfect roommate</p>
+               <div class="input-group loc-search">
+                    <input type="text" class="form-control" placeholder="where are you searching?" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="search-sidebar" ><i class="fa fa-search" aria-hidden="true"></i><span class="search-txt"> Search</span></span>
+               </div>
+         </div>
+
+               <div class="jumbotron post-room">
+                  <h1>Do you have a room for rent?</h1>
+                     <p>With room.me it's easy to find roommates who match your personality.</p>
+                  <p><a class="btn btn-primary btn-lg post-btn" href="#" role="button">Post Your Room</a></p>
+               </div>
+               <div class="room-about">
+                  <h1>Your Roommate Finder</h1>
+                  <p><span>room.me</span> is here to make your life easier. We believe in living with the right people and we want you to be happy in your shared home.  Find rooms for rent and roommates by using smart matching algorithm and quickly connect with your perfect roommate.</p>
+
+               </div>
+
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-4 col-info">
+                        <div class="info-img"><img src="./images/profile-guy-plus.svg" alt=""></div>
+                        <div class="info-text">
+                           <h3>Create a Profile</h3>
+                           <p>Tell us about yourself and answer matching questions in a few simple steps.</p>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-sm-4 col-info">
+                        <div class="info-img"><img src="./images/95-percent.svg" alt=""></div>
+                        <div class="info-text">
+                           <h3>Match Smarter</h3>
+                           <p>See how good you match with your future roommates before meeting them in person.</p>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-sm-4 col-info">
+                        <div class="info-img"><img src="./images/move-in-keys.svg" alt=""></div>
+                        <div class="info-text">
+                           <h3>Move In</h3>
+                           <p>Message with your best matches, move in and enjoy your new home.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="find-out"><a href="#">Find out how it works.</a></div>
+
+               </div>
+
+               <div class="jumbotron rec-jumbo">
+                  <h3>Recommend #roomdotme</h3>
+                     <p>Do you know someone looking for or renting out a room? Tell them about us.</p>
+
+                           <div class="social-media">
+                                 <p class="share-txt">
+                                    <span class="share">Share on</span>
+                                       <i class="fa fa-facebook social-icon" aria-hidden="true"></i>
+                                          <i class="fa fa-google-plus social-icon" aria-hidden="true"></i>
+                                       <i class="fa fa-twitter social-icon" aria-hidden="true"></i>
+                                    <span class="share">or</span>
+                                 </p>
+                                 <div class="input-group email-input">
+                                      <input type="text" class="form-control" id="email-bar" placeholder="enter a friends email address" aria-describedby="basic-addon2">
+                                      <span class="input-group-addon" id="email-sidebar" ><i class="fa fa-paper-plane-o" aria-hidden="true"></i></i></span>
+                                 </div>
+                           </div>
+
+
+
+
+               </div>
+               <div class="success">
+                  <h3>Success Stories</h3>
+                  <p>See how other roomies have found their perfect matches</p>
+               </div>
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-4 story-col">
+                        <img src="images/success-jasmine.png" alt="">
+                           <h3>Jasmine</h3>
+                        <p>I trust room.me more than Craigslist, for sure.</p>
+                     </div>
+                     <div class="col-xs-12 col-sm-4 story-col">
+                        <img src="images/success-kevyan.png" alt="">
+                           <h3>Keyvan</h3>
+                        <p>What makes room.me different is the criteria by which roommates are matched against.</p>
+                     </div>
+                     <div class="col-xs-12 col-sm-4 story-col">
+                        <img src="images/success-sophia.png" alt="">
+                           <h3>Sophia</h3>
+                        <p>room.me is so easy to navigate and its questionnares are so helpful in finding the perfect match for me.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="jumbotron featured">
+                  <h3>Featured Rooms</h3>
+                  <div class="container">
+                     <div class="row">
+                        <div class="thumbnail col-xs-12 col-sm-4 ft-listing">
+                           <div class="ft-loc">
+                              <img src="images/featured-02.jpg" alt="...">
+                              <img src="images/featured-user-02.jpg" alt=""class="ft-usr">
+                              <i class="fa fa-heart-o heart" aria-hidden="true"></i>
+                           </div>
+                             <div class="caption">
+                                <h4>2 Bedroom Available in a 3 Br/2...</h4>
+                                 <p>$2,200 | Oct 1, 2016</p>
+                             </div>
+                        </div>
+                        <div class="thumbnail col-xs-12 col-sm-4 ft-listing">
+                           <div class="ft-loc">
+                              <img src="images/featured-03.jpg" alt="... ">
+                              <img src="images/featured-user-03.jpg" alt="" class="ft-usr">
+                              <i class="fa fa-heart-o heart" aria-hidden="true"></i>
+                           </div>
+
+                                <div class="caption">
+                                   <h4>Looking for a great roomie - BH...</h4>
+                                    <p>$1,200 | Nov 1, 2016</p>
+                                </div>
+                        </div>
+                        <div class="thumbnail col-xs-12 col-sm-4 ft-listing">
+                           <div class="ft-loc">
+                              <img src="images/featured-01.jpg" alt="...">
+                              <img src="images/featured-user-01.jpg" alt="" class="ft-usr">
+                              <i class="fa fa-heart-o heart" aria-hidden="true"></i>
+                           </div>
+                             <div class="caption">
+                                <h4>Large Double Available!</h4>
+                                 <p>$1,000 | Sep 8, 2016- Jan 1, 2017</p>
+                             </div>
+                        </div>
+                     </div>
+
+
+                  </div>
+                  <p class="text-center"><a class="btn btn-primary btn-lg more-btn" href="#" role="button">See More Rooms</a></p>
+               </div>
+               <div class="room-footer">
+                  <div class="footer-links text-center">
+                     <a href="#">How It Works</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Blog</a>
+                     <a href="#">Imprint</a>
+                  </div>
+                  <div class="google-footer">
+                     <img src="images/google-play.png" alt="">
+                  </div>
+                  <div class="footer-social">
+                     <i class="fa fa-facebook " aria-hidden="true"></i>
+                     <i class="fa fa-google-plus" aria-hidden="true"></i>
+                     <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </div>
+                  <div class="me-copyright text-center">
+                     <p>&copy 2015 room.me</p>
+                  </div>
+
+
+
+
+
+
+               </div>
+               <div class="room-footer-tablet">
+                  <div class="left-footer">
+                        <div class="rm-ftr-logo">
+                           <img src="images/room-me-logo-white.svg" alt="">
+                        </div>
+                     <p class="tab-copyright">&copy 2015 room.me</p>
+                  </div>
+                     <div class="qk-links">
+                        <h3>Quick links</h3>
+                           <ul>
+                              <li>How it Works</li>
+                              <li>FAQ</li>
+                              <li>Blog</li>
+                              <li>Imprint</li>
+                           </ul>
+                     </div>
+                     <div class="rms-fr-rnt">
+                        <h3>Rooms for Rent</h3>
+                           <ul>
+                              <li>San Francisco</li>
+                              <li>Los Angeles</li>
+                              <li>San Jose</li>
+                              <li>Sacramento</li>
+                              <li>San Diego</li>
+                              <li>Boston</li>
+                           </ul>
+                     </div>
+
+                     <div class="right-footer">
+                        <h3>Download the App</h3>
+                        <img src="images/google-play.png" alt="" class="google-logo">
+                        <h3>Follow us</h3>
+                        <div class="footer-social">
+                           <i class="fa fa-facebook " aria-hidden="true"></i>
+                           <i class="fa fa-google-plus" aria-hidden="true"></i>
+                           <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </div>
+                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+               </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
    </body>
 </html>

@@ -1,11 +1,376 @@
 @import "./imports/_normalize.scss";
 
+@mixin media-query($screen-size){
+   @media screen and (min-width: $screen-size){
+      @content;
+   }
+}
+$pri-blue: #7AC0CE;
+$pri-gray: #2D3947;
 *{ box-sizing: border-box }
 img {
    width: 100%;
    display: block;
 }
+body{
+font-family: 'Source Sans Pro', sans-serif;}
 
 #app-container{
-   max-width: 960px;
+
+
+   .header-jumbo{
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 100px;
+      position: relative;
+      color: #fff;
+      text-align: center;
+      background: url('../images/roomies-eating-together-bg.jpg')center,center,no-repeat;
+      background-size: cover;
+      h1{
+         font-weight: bolder;
+         font-size: 22px;
+         margin-top: 0;
+          padding-top: 100px;}
+      p{
+         font-size: 12px;
+         margin-bottom: 0;
+         padding-bottom: 5px;
+      }
+
+
+
+
+
+         .nav-menu{
+            padding-top: 5px;
+            padding-right: 5px;
+            text-align: right;
+         float: right;
+            width: 50%;
+            p{display: none;}
+            .ham-menu{display: block;}
+            @include media-query(768px){
+               p{display: block;}
+               .ham-menu{display: none;}
+            }
+
+            }
+
+
+
+
+
+   }
+   .nav-logo{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20%;
+      max-width: 125px;
+
+   }
+   .loc-search{
+      width: 80%;
+      margin: 0 auto;
+      #search-sidebar{
+         color: white;
+         width: 30%;
+         background: $pri-blue;
+         .search-txt{
+            display: none;
+            @include media-query(768px){
+               display: inline-block;
+            }
+         }
+
+      }
+   }
+   .post-room{
+      padding-bottom: 50px;
+      text-align: center;
+      background: $pri-blue;
+      color: #fff;
+      h1{
+         font-size: 22px;
+         margin-bottom: 5px;
+
+      }
+      p{font-size: 12px;}
+
+      .post-btn{
+         padding: 5px 0;
+         width: 100px;
+         font-size: 12px;
+         background: $pri-gray;
+         border: none;
+         border-radius: 4px;
+
+       }
+
+   }
+
+   .room-about{
+      padding: 20px 5px;
+      text-align: center;
+      font-size: 12px;
+      h1{
+         font-weight: bolder;
+         color: $pri-blue;
+      }
+      span{font-weight: bolder;}
+   }
+
+
+.col-info{
+   text-align: center;
+   font-size: 12px;
+   .info-img{
+      margin: 0 auto;
+      width: 30%;
+      @include media-query(768px){
+         display: inline-block;
+      }
+   }
+   .info-text{
+      @include media-query(768px){
+         display: inline-block;
+         width: 50%;
+   }
+   }
+      h3{
+         font-size: 18px;
+         margin-top: 0;}
+
+}
+.find-out{
+   padding: 20px 0 40px 0;
+   text-align: center;
+   color: $pri-blue;
+}
+.rec-jumbo{
+   background: url('../images/happy-roomies-bg.jpg')center,center,no-repeat;
+   background-size: cover;
+   color: #fff;
+   text-align: center;
+   padding-bottom: 50px;
+   .social-media{
+
+      .share-txt{
+         @include media-query(768px){
+            margin: 0 auto;
+            display: inline-block;
+            padding-right: 50px;
+         }
+
+         .share{
+            display: block;
+            @include media-query (768px){
+               display: inline-block;
+               padding: 0 10px;
+            }
+         }
+      }
+      .social-icon{
+         width: 20px;
+         height: 20px;
+         background: $pri-blue;
+         border-radius: 50%;
+         margin: 0 10px;
+      }
+      .email-input{
+         width: 80%;
+         max-width: 400px;
+         margin: 0 auto;
+         @include media-query (768px){
+            width: 60%;
+            display: inline-block;
+         }
+         #email-bar{max-width: 300px;}
+         #email-sidebar{
+            color: white;
+            height: 34px;
+            max-width: 100px;
+            width: 30%;
+            background: $pri-gray;
+            border: none;
+         }
+   }
+   }
+
+
+
+
+}
+.success{
+   font-size: 12px;
+   text-align: center;
+   h3{
+      padding-bottom: 15px;
+      color:$pri-blue;
+      font-weight: bolder;
+   }
+}
+
+.story-col{
+   font-size: 12px;
+   h3{
+      font-weight: bolder;
+      font-size: 18px;
+      color: $pri-blue
+   }
+   text-align: center;
+   img{
+      margin: 0 auto;
+      width: 20%;
+      @include media-query(768px){
+         width: 30%;
+      }
+   }
+
+}
+.featured{
+   background: #F7C760;
+   margin-bottom: 0;
+   h3{
+      text-align: center;
+      font-weight: bolder;
+   }
+   .ft-listing{
+      float: initial;
+      margin: 25px auto;
+      padding: 0;
+      border: none;
+      width: 55%;
+      border-radius: 0px;
+      @include media-query(768px){
+         margin: 50px;
+         float: left;
+         width: 20%;
+      }
+      .ft-loc{
+         position: relative;
+
+      }
+      .ft-usr{
+         width: 20%;
+         position: absolute;
+         bottom: -14px;
+         right: 5px;
+         border: 2px #fff solid;
+
+         border-radius: 50%;
+      }
+      .heart{
+         color: #fff;
+         position: absolute;
+         top: 20px;
+         right: 20px;
+      }
+      .caption{
+         padding: 5px 10px;
+         h4{
+            font-weight: bolder;
+            margin: 0 auto;
+            font-size: 10px;
+         }
+         p{
+            margin: 0 auto;
+            font-size: 10px;}
+
+      }
+
+
+   }
+   .more-btn{
+      font-size: 16px;
+      padding: 5px;
+      margin: 0 auto;
+      text-align: center;
+      background: $pri-gray;
+      border-radius: 2px;
+
+   }
+
+}
+
+// MOBILE FOOTER
+.room-footer{
+   background: $pri-gray;
+   @include media-query(768px){
+      display: none;
+
+   .footer-links{
+      padding: 10px;
+
+      }
+      a{
+         font-size: 12px;
+         padding: 10px;
+         color: #fff;
+      }
+
+   }
+   .google-footer{
+      margin: 0 auto;
+      padding-bottom: 20px;
+      width: 25%;
+   }
+   .footer-social{
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 1px #fff solid;
+      i{
+         height: 30px;
+         width: 30px;
+         padding: 7px;
+         border-radius: 50%;
+         border: 1px solid #fff;
+         display: inline-block;
+         color: #fff;
+      }
+   }
+   .me-copyright{
+      padding: 10px 0 5px 0;
+      color: #fff;
+      font-size: 10px;
+   }
+}
+
+.room-footer-tablet{
+   display: none;
+   background: $pri-gray;
+   color: #fff;
+   @include media-query(768px){
+      display: block;
+   }
+   div{display: inline-block;}
+   .left-footer{
+
+      width: 25%;
+      .rm-ftr-logo{
+         padding-left: 10px;
+         // padding-bottom: 100px;
+         display: block;
+         width: 50%;
+      }
+      p{padding-left:10px;}
+   }
+
+      .qk-links{
+         h3{margin-top: 0;}
+         width: 25%;
+      }
+      .rm-fr-rnt{
+         width: 25%;
+      }
+
+
+   .right-footer{
+      width: 25%;
+   }
+
+
+}
 }
