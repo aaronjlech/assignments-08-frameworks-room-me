@@ -237,14 +237,15 @@ font-family: 'Source Sans Pro', sans-serif;}
       font-weight: bolder;
    }
    .ft-listing{
-      // float: initial;
+      float: initial;
       margin: 25px auto;
       padding: 0;
       border: none;
       width: 55%;
       border-radius: 0px;
       @include media-query(768px){
-         // float: left;
+         margin: 50px;
+         float: left;
          width: 20%;
       }
       .ft-loc{
@@ -293,11 +294,16 @@ font-family: 'Source Sans Pro', sans-serif;}
 
 }
 
+// MOBILE FOOTER
 .room-footer{
    background: $pri-gray;
+   @include media-query(768px){
+      display: none;
 
    .footer-links{
       padding: 10px;
+
+      }
       a{
          font-size: 12px;
          padding: 10px;
@@ -330,5 +336,41 @@ font-family: 'Source Sans Pro', sans-serif;}
       color: #fff;
       font-size: 10px;
    }
+}
+
+.room-footer-tablet{
+   display: none;
+   background: $pri-gray;
+   color: #fff;
+   @include media-query(768px){
+      display: block;
+   }
+   div{display: inline-block;}
+   .left-footer{
+
+      width: 25%;
+      .rm-ftr-logo{
+         padding-left: 10px;
+         // padding-bottom: 100px;
+         display: block;
+         width: 50%;
+      }
+      p{padding-left:10px;}
+   }
+
+      .qk-links{
+         h3{margin-top: 0;}
+         width: 25%;
+      }
+      .rm-fr-rnt{
+         width: 25%;
+      }
+
+
+   .right-footer{
+      width: 25%;
+   }
+
+
 }
 }

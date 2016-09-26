@@ -538,6 +538,7 @@ body {
     text-align: center;
     font-weight: bolder; }
   #app-container .featured .ft-listing {
+    float: initial;
     margin: 25px auto;
     padding: 0;
     border: none;
@@ -545,6 +546,8 @@ body {
     border-radius: 0px; }
     @media screen and (min-width: 768px) {
       #app-container .featured .ft-listing {
+        margin: 50px;
+        float: left;
         width: 20%; } }
     #app-container .featured .ft-listing .ft-loc {
       position: relative; }
@@ -578,12 +581,15 @@ body {
     border-radius: 2px; }
 #app-container .room-footer {
   background: #2D3947; }
-  #app-container .room-footer .footer-links {
-    padding: 10px; }
-    #app-container .room-footer .footer-links a {
-      font-size: 12px;
-      padding: 10px;
-      color: #fff; }
+  @media screen and (min-width: 768px) {
+    #app-container .room-footer {
+      display: none; }
+      #app-container .room-footer .footer-links {
+        padding: 10px; }
+      #app-container .room-footer a {
+        font-size: 12px;
+        padding: 10px;
+        color: #fff; } }
   #app-container .room-footer .google-footer {
     margin: 0 auto;
     padding-bottom: 20px;
@@ -605,5 +611,30 @@ body {
     padding: 10px 0 5px 0;
     color: #fff;
     font-size: 10px; }
+#app-container .room-footer-tablet {
+  display: none;
+  background: #2D3947;
+  color: #fff; }
+  @media screen and (min-width: 768px) {
+    #app-container .room-footer-tablet {
+      display: block; } }
+  #app-container .room-footer-tablet div {
+    display: inline-block; }
+  #app-container .room-footer-tablet .left-footer {
+    width: 25%; }
+    #app-container .room-footer-tablet .left-footer .rm-ftr-logo {
+      padding-left: 10px;
+      display: block;
+      width: 50%; }
+    #app-container .room-footer-tablet .left-footer p {
+      padding-left: 10px; }
+  #app-container .room-footer-tablet .qk-links {
+    width: 25%; }
+    #app-container .room-footer-tablet .qk-links h3 {
+      margin-top: 0; }
+  #app-container .room-footer-tablet .rm-fr-rnt {
+    width: 25%; }
+  #app-container .room-footer-tablet .right-footer {
+    width: 25%; }
 
 /*# sourceMappingURL=styles.css.map */
